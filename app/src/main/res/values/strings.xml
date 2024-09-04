@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Show Store Inventory</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_with_an_existing_account">Login with an existing account</string>
+    <string name="text_continue">Continue</string>
+    <string name="text_welcome_one">Welcome to the official online store\nof Shoe Store Inventory</string>
+    <string name="text_welcome_two">Free Shipping on orders over £40</string>
+    <string name="text_question_1">How to see the shoe list?</string>
+    <string name="text_answer_1">Press add button to the shoe detail screen and create new shoe with Shoe Name, Company, Shoe Size and Description</string>
+    <string name="text_question_2">How can users log out of the app?</string>
+    <string name="text_answer_2">In the shoe list screen, press menu icon and show menu. This Logout menu will appear only on the shoe list screen and will logout the user to the login screen</string>
+    <string name="logout">LogOut</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="description">Description</string>
+    <string name="shoe_name_text">Shoe Name: %s</string>
+    <string name="company_text">Company: %s</string>
+    <string name="size_text">Size: %d</string>
+    <string name="description_text">Description: %s</string>
+    <string name="please_enter_valid_email_and_password">Please enter valid email and password</string>
+</resources>

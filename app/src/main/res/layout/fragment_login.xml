@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.showstoreinventory.login.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:text="@string/email"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toTopOf="@id/edit_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:text="@={viewModel.email}"
+            app:layout_constraintBottom_toTopOf="@id/text_password"
+            app:layout_constraintTop_toBottomOf="@id/text_email" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/password"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toTopOf="@id/edit_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:text="@={viewModel.password}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@id/edit_email"
+            app:layout_constraintStart_toStartOf="@id/edit_email"
+            app:layout_constraintTop_toBottomOf="@id/edit_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_login_existing_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/login_with_an_existing_account"
+            app:layout_constraintEnd_toEndOf="@id/edit_email"
+            app:layout_constraintStart_toStartOf="@id/edit_email"
+            app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
